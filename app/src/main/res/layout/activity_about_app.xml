@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_about_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/tintcolor"
+        tools:context="com.example.motwkel.kb_calculator.About_app">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/m" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="- My Name is Motwkel Mohammed, i'm from sudan, i'm freelancer android developer. Hope you like my app :) this will be the initial version of the app just wait for the update."
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear"
+                android:layout_marginTop="15dp"
+                android:fontFamily="monospace"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="- This app is used for calculating TWO NUMBERS !,and make the result to place of number one if you want to make a large processing calculation. You must enter the number first and then the operation (|X|,X²,¹/x,√x) to get the result OR enter the first number and then the operation      (*,/,+,-,%)and then the second number to get the result. "
+                android:textColor="?attr/textcolor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="monospace"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="- There is some amazing things in the app just like color : you can change the Theme to the Dark Theme at night if you want that :)  , and you can contact us in Facebook and LinkedIn in any time , and Finally you can copy your calculation by touching the second calculating Field , and there more Things in The next update !."
+                android:textColor="?attr/textcolor"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/color_switch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/f" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="facebook"
+                    android:textColor="?attr/textcolor" />
+
+                <ImageButton
+                    android:id="@+id/linkedin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/l" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="linkedIn"
+                    android:textColor="?attr/textcolor" />
+
+                <ImageButton
+                    android:id="@+id/devimpct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/d" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="our page:Dev Imapct"
+                    android:textColor="?attr/textcolor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
